@@ -80,4 +80,32 @@ while cont <= len(usuarios):
         print(f"Achou o '{usuarios[cont]}'")
         break
 print("Programa finalizado!")
+
+
+# Ex4
+opcao = ""
+produtos = []
+while opcao != "3":
+    print("\nMenu Interativo\n1 - Listar produto\n2 - Cadastrar produto\n3 - Sair")
+    opcao = input("Digite uma opção: ")
+
+    if opcao == "1":
+        for i in range(len(produtos)):
+            print(f"{produtos[i]}")
+    elif opcao == "2":
+        produtos.append(input("Digite um produto: "))
+print("\n\nPrograma finalizado!")
+
+
+# Ex5
+senha = ""
+while True:
+    senha = input("Digite uma senha com no mínimo 6 Caracteres: ")
+
+    if len(senha) <= 6:
+        print("A senha precisa estar com no mínimo 6 caracteres!")
+        continue
+    else:
+        print("Senha confirmada!")
+        break
 '''
